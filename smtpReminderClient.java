@@ -99,15 +99,17 @@ public class smtpReminderClient {
 
             
             out.println("mail from: cos332sender@sitecheck.co.za");
-            out.println("rcpt to: cos332receiver@sitecheck.co.za");
+            out.println("rcpt to: giovanni.joubert@gmail.com");
             out.println("data");
-            out.println("To: Giovanni cos332receiver@sitecheck.co.za");
+            out.println("To: Giovanni giovanni.joubert@gmail.com");
+            out.println("From: COS332Sender cos332sender@sitecheck.co.za");
             out.println("Subject: Events & Birthday's This week");
             out.println("Hi! Here are the events & birthday's for this week");
             
             for (String event : EmailBody) {
                 out.println("\t - " + event);
             }
+            out.println("");
             out.println("Regards,");
             out.println("Your COS332 Mailer");
             out.println(".");
